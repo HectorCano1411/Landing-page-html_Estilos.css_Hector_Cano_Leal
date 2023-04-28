@@ -166,6 +166,77 @@ header{
     color: #fff;
 
 }
+/* FORMULARIO */
+#contacto{
+    background:#6cc091 ;
+    padding: 50px 0px;
+    color: #fff;
+}
+
+#contacto h4{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+#contacto form{
+    max-width: 80%;
+    margin: 0 auto;
+}
+.datos_form{
+    display: flex;
+}
+.datos_form div{
+    padding: 10px;
+    flex: 1;
+}
+form label{
+    display:block;
+    margin-bottom: 10px;
+}
+form input, form textarea{
+    background: #6cc091;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+
+}
+form input:focus, form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #fff;
+}
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.boton_formulario .boton_saber_mas{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+.boton_formulario .boton_saber_mas:hover{
+    background: #4fa776ad;
+}
+footer{
+    background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+
+
+
 
 
 
@@ -212,6 +283,10 @@ header{
     }
     .contenido_iconos div{
         border: none;
+    }
+    /* FORMULARIO */
+    .datos_form{
+        flex-direction: column
     }
 
 }
