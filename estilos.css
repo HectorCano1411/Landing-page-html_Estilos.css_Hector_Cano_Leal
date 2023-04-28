@@ -1,0 +1,219 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+/* HEADER */
+header{
+    height: 100px;
+    background: #4d4d5c;
+    padding:  0  50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-transform: uppercase;
+    color: #6cc091;
+    font-weight: 200;
+}
+ .menu a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+ }
+ .mostrar_menu, .esconder_menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+ }
+
+ .mostrar_menu{
+    order: 1;
+ }
+ .menu a:hover, .mostrar_menu:hover, .esconder_menu:hover{
+    color: #6cc091;
+
+  }
+#check{
+    display: none;
+}
+
+/* BANNER */
+#banner{
+    padding: 0 50px;
+    background-image: url(img/brasil4.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner::before{
+    content:'';
+    /* background: rgba(77, 77, 92, 0.6); */
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left: 0;
+}
+.contenido_banner{
+    position: absolute;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contenido_banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 10px 0px;
+}
+.contenido_banner h3 span{
+    font-weight: 600;
+}
+.boton_empezar{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #6cc091 ;
+    padding: 20px 40px;
+    align-self: baseline;
+    transition: all 0.4s;
+}
+.boton_empezar:hover{
+    background: #6cc09070;
+}
+
+/* PERSONAS */
+#personas{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#personas img{
+    border-radius: 100%;
+}
+#personas div{
+    padding: 30px 30px;
+}
+#personas div h4{
+    color: #4d4d5c;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#personas div p{
+    color: #4d4d5c87;
+    font-size: 18px;
+}
+.boton_saber_mas{
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+.boton_saber_mas:hover{
+    background: #6cc091;
+    color: #fff;
+}
+/* ICONOS */
+#iconos{
+    padding: 0px 50px;
+    background: rgba(77, 77, 92, 0.6);
+}
+.contenido_iconos{
+    padding: 50px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.contenido_iconos div{
+    flex: 1;
+    margin: 20px 0px;
+    border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+#icono_insta{
+    border: none;
+}
+/* .contenido_iconos div h6{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 10px 0px;
+} */
+.contenido_iconos div a{
+    display: inline-block;
+    text-decoration: none;
+    color: #6cc091;
+    padding: 10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+
+}
+.contenido_iconos div a:hover{
+    background: #6cc091;
+    color: #fff;
+
+}
+
+
+
+
+
+/* RESOPONSIVE */
+@media(max-width:768px){
+    /* HEADER */
+    .mostrar_menu, .esconder_menu{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #4d4d5c ;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 20px;
+    }
+    .esconder_menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+        right: 0;
+    }
+    /* PERSONAS */
+    #personas{
+        flex-direction: column;
+    }
+    /* ICONOS */
+    .contenido_iconos{
+        flex-direction: column;
+    }
+    .contenido_iconos div{
+        border: none;
+    }
+
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
