@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
     
 }
 /* HEADER */
@@ -77,10 +78,17 @@ header{
     font-weight: 600;
 }
 .boton_empezar{
-    text-decoration: none;
+    /* text-decoration: none;
     color: #ffffff;
-    border: 1px solid #ff0000 ;
-    padding: 20px 40px;
+    border-radius: 1px solid #ff0000 ;
+    padding: 20px 40px; */
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
     align-self: baseline;
     transition: all 0.4s;
 }
@@ -98,18 +106,25 @@ header{
 
 #personas img{
     border-radius: 100%;
+    box-shadow: 5px 15px 20px 30px rgb(202, 201, 201)
+
 }
 #personas div{
     padding: 30px 30px;
+    box-shadow: 5px 15px 20px 30px grey;
+
 }
 #personas div h4{
+    
     color: #4d4d5c;
     font-size: 20px;
-    margin: 15px 0px;
+    margin: 40px 0px 20px 0px;
+    
 }
 #personas div p{
     color: #4d4d5c87;
     font-size: 18px;
+
 }
 .boton_saber_mas{
     display: inline-block;
@@ -120,10 +135,13 @@ header{
     border-radius: 30px;
     margin-top: 15px;
     transition: all 0.4s;
+    
 }
 .boton_saber_mas:hover{
     background: #0c2685;
     color: #fff;
+    box-shadow: 5px 15px 15px 15px rgb(244, 237, 237);
+
 }
 /* ICONOS */
 #iconos{
@@ -159,10 +177,12 @@ header{
     border-radius: 30px;
     margin-top: 15px;
     transition: all 0.4s;
+    
 
 }
 .contenido_iconos div a:hover{
     background: #070c4e;
+    box-shadow: 5px 5px 5px 5px rgb(244, 237, 237);
     color: #fff;
 
 }
@@ -174,6 +194,7 @@ header{
 }
 
 #contacto h4{
+    
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
@@ -226,20 +247,49 @@ form input::placeholder, form textarea::placeholder{
 .boton_formulario .boton_saber_mas:hover{
     background: #0e6503ad;
 }
-footer{
-    background: #4d4d5c;
-    color: #cccccc4a;
-    text-align: center;
-    padding: 10px 0px;
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer{
+    background-color:#24262b ;
+    padding: 80px 0;
+}
+ .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ .footer-link{
+    width: 25%;
+    padding:  0 115px;
+ }
+
+.footer-link h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-weight: 300;
+    /* border-bottom: 2px solid #00c3ff ; */
+    /* padding: 10px; */
+    display: inline-block;
+    text-decoration: none;
 }
 
-
-
-
-
-
-
-
+.footer-link ul li a{
+    column-gap: 50px5;
+    row-gap: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .4s ease;
+}
+.footer-link ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+    
+}
 
 
 /* RESOPONSIVE */
@@ -287,6 +337,14 @@ footer{
     /* FORMULARIO */
     .datos_form{
         flex-direction: column
+    }
+    /* FOOTER */
+    .footer-row{
+        text-align: center
+    }
+    .footer-link{
+        width: 100%;
+        margin-bottom: 30px
     }
 
 }

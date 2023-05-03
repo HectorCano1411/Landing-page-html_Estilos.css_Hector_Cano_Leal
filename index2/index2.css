@@ -1,0 +1,26 @@
+body {
+  background: radial-gradient(circle, #000000, #000033, #000066, #000099, #0000cc, #0000ff, #0000cc, #000099, #000066, #000033, #000000);
+}
+h1{
+  color: #fff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
